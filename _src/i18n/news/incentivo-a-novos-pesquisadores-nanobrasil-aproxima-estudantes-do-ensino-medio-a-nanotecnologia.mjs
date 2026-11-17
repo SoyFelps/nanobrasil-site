@@ -1,0 +1,28 @@
+export default {
+en: [
+`Inside the laboratory and inside nanotechnology: students in their final year of high school, just a few steps from university, learned about some of the technologies made possible by nanoparticles.`,
+`At the invitation of CEI, UFMG's Teaching and Innovation Center, NanoBrasil showed the students what nanotechnology really is and how it is applied in the market.`,
+`The aim of the visit was to spark the young people's interest in research, chemistry and innovation.`,
+`“The students were excited by this effort to bring them closer, showing the functions of technology that is born inside the university and goes to the market,” says Manuel Rodríguez, coordinator of NanoBrasil's research laboratory.`,
+`Manuel Rodríguez explains nanotechnology during the students' visit | NanoBrasil archive`,
+`“Nanoparticles are often associated with toxicity and lack of safety. Those who don't know about them, or know very little, end up being afraid of these new technologies,” says Manuel.`,
+`The equipment in research`,
+`The visit took place in the laboratory of UFMG's Department of Chemistry and, in addition to seeing the products, the students learned what the equipment is used for in the research process.`,
+`“We were invited not only to present the company, but also to show the equipment we have in the Department of Chemistry and how it is used day to day by industries in manufacturing products,” says Manuel.`,
+`Materials used during the visit | NanoBrasil archive`,
+`“We brought some nanoparticles, some prepared products and some solutions to show all the stages NanoBrasil is involved in when creating its products,” concludes Manuel.`,
+],
+es: [
+`Dentro del laboratorio y por dentro de la nanotecnología: alumnos en la recta final de la secundaria, a pocos pasos de la universidad, conocieron un poco de las tecnologías posibles a partir de las nanopartículas.`,
+`Por invitación del CEI, el Centro de Enseñanza e Innovación de la UFMG, NanoBrasil presentó a los estudiantes qué es realmente la nanotecnología y cómo se aplica en el mercado.`,
+`El objetivo de la visita fue despertar en los jóvenes el interés por la investigación, la química y la innovación.`,
+`“Los estudiantes quedaron entusiasmados con este intento de acercarlos, mostrando las funcionalidades de la tecnología que nace dentro de la universidad y llega al mercado”, dice Manuel Rodríguez, coordinador del laboratorio de investigación de NanoBrasil.`,
+`Manuel Rodríguez explica sobre nanotecnología durante la visita de los estudiantes | Archivo NanoBrasil`,
+`“Muchas veces, la nanopartícula se asocia con toxicidad e inseguridad. Quien no la conoce o la conoce muy poco termina teniendo miedo de estas nuevas tecnologías”, dice Manuel.`,
+`Los equipos en una investigación`,
+`La visita se realizó en el laboratorio del Departamento de Química de la UFMG y, además de conocer los productos, los estudiantes vieron para qué sirven los equipos en el proceso de investigación.`,
+`“Fuimos invitados no solo para presentar la empresa, sino también para mostrar cómo son los equipos que tenemos en el Departamento de Química y cómo los usan en el día a día las industrias en la fabricación de productos”, cuenta Manuel.`,
+`Materiales utilizados en la visita | Archivo NanoBrasil`,
+`“Llevamos algunas nanopartículas, algunos productos preparados y algunas soluciones para mostrar todas las etapas en las que NanoBrasil participa en la creación de sus productos”, concluye Manuel.`,
+],
+};

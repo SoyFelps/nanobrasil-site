@@ -1,0 +1,7 @@
+{
+  "name": "nanobrasil-site-build",
+  "private": true,
+  "type": "module",
+  "scripts": { "build": "node build.mjs", "serve": "node serve.mjs" },
+  "devDependencies": { "linkedom": "0.18.5" }
+}

@@ -1,0 +1,70 @@
+// Traduções das áreas em destaque (avicultura e tintas) e itens novos de agro.
+export default [
+  [`Em destaque`, `Featured`, `Destacado`],
+  [`Avicultura`, `Poultry farming`, `Avicultura`],
+  [`Sanidade e controle microbiano`, `Health and microbial control`, `Sanidad y control microbiano`],
+  [`Cobre`, `Copper`, `Cobre`],
+  [`Titânio`, `Titanium`, `Titanio`],
+
+  // avicultura
+  [`A cama aviária reúne umidade, matéria orgânica e microrganismos ao longo de todo o ciclo de criação, e é um dos principais focos de contaminação do lote. As nanopartículas de cobre atuam como agentes antimicrobianos: em contato com bactérias e fungos, danificam suas estruturas e reduzem a carga microbiana do ambiente. Por serem muito menores, têm mais área de contato e podem agir com menor quantidade de ativo.`,
+    `Poultry litter gathers moisture, organic matter and microorganisms throughout the whole rearing cycle, and it is one of the main sources of flock contamination. Copper nanoparticles act as antimicrobial agents: in contact with bacteria and fungi, they damage their structures and reduce the microbial load of the environment. Because they are much smaller, they have more contact area and can work with a smaller amount of active ingredient.`,
+    `La cama avícola reúne humedad, materia orgánica y microorganismos durante todo el ciclo de crianza, y es uno de los principales focos de contaminación del lote. Las nanopartículas de cobre actúan como agentes antimicrobianos: en contacto con bacterias y hongos, dañan sus estructuras y reducen la carga microbiana del ambiente. Al ser mucho más pequeñas, tienen más área de contacto y pueden actuar con una menor cantidad de activo.`],
+  [`A pesquisa científica também aponta as nanopartículas metálicas como uma alternativa promissora para a produção de aves, em um cenário de busca por menor uso de antibióticos e de preocupação com a resistência microbiana. A NanoBrasil desenvolve e fornece essas nanopartículas estabilizadas e padronizadas, prontas para serem incorporadas em produtos para o setor.`,
+    `Scientific research also points to metallic nanoparticles as a promising alternative for poultry production, at a time when the industry seeks to use fewer antibiotics and is concerned about microbial resistance. NanoBrasil develops and supplies these stabilized, standardized nanoparticles, ready to be incorporated into products for the sector.`,
+    `La investigación científica también señala a las nanopartículas metálicas como una alternativa prometedora para la producción de aves, en un escenario de búsqueda de un menor uso de antibióticos y de preocupación por la resistencia microbiana. NanoBrasil desarrolla y suministra estas nanopartículas estabilizadas y estandarizadas, listas para ser incorporadas en productos para el sector.`],
+  [`Nanopartícula estabilizada`, `Stabilized nanoparticle`, `Nanopartícula estabilizada`],
+  [`Nanocobre e óxido de zinco em formulações padronizadas, prontas para o uso`, `Nanocopper and zinc oxide in standardized formulations, ready to use`, `Nanocobre y óxido de zinc en formulaciones estandarizadas, listas para usar`],
+  [`Ação por contato`, `Action by contact`, `Acción por contacto`],
+  [`Atuam sobre bactérias e fungos presentes no ambiente de criação`, `They act on bacteria and fungi present in the rearing environment`, `Actúan sobre las bacterias y hongos presentes en el ambiente de crianza`],
+  [`Ambiente mais seguro`, `A safer environment`, `Ambiente más seguro`],
+  [`Menor carga microbiana, melhores condições sanitárias e menos riscos na produção`, `Lower microbial load, better sanitary conditions and fewer production risks`, `Menor carga microbiana, mejores condiciones sanitarias y menos riesgos en la producción`],
+  [`Apoio à sanidade do lote`, `Support for flock health`, `Apoyo a la sanidad del lote`],
+  [`Ambiente de criação com menor carga microbiana contribui para a saúde das aves`, `A rearing environment with a lower microbial load contributes to the health of the birds`, `Un ambiente de crianza con menor carga microbiana contribuye a la salud de las aves`],
+  [`Alternativa em um cenário de menos antibióticos`, `An alternative in a lower-antibiotic scenario`, `Alternativa en un escenario de menos antibióticos`],
+  [`Agentes antimicrobianos de base metálica ampliam as opções de manejo sanitário`, `Metal-based antimicrobial agents broaden the options for health management`, `Los agentes antimicrobianos de base metálica amplían las opciones de manejo sanitario`],
+  [`<b>Apoio à sanidade do lote.</b>…`, `<b>Support for flock health.</b> A rearing environment with a lower microbial load contributes to the health of the birds.`, `<b>Apoyo a la sanidad del lote.</b> Un ambiente de crianza con menor carga microbiana contribuye a la salud de las aves.`],
+  [`<b>Alternativa em um cenário de menos antibióticos.</b>…`, `<b>An alternative in a lower-antibiotic scenario.</b> Metal-based antimicrobial agents broaden the options for health management.`, `<b>Alternativa en un escenario de menos antibióticos.</b> Los agentes antimicrobianos de base metálica amplían las opciones de manejo sanitario.`],
+
+  // tintas
+  [`Em tintas e revestimentos, o desempenho depende de como a partícula se distribui na formulação. Em escala nanométrica, as partículas têm muito mais área de contato com a resina, o que favorece a dispersão, o acabamento e a ação do ativo na superfície. O dióxido de titânio é conhecido pela proteção contra a radiação UV e, sob luz, pode ter ação fotocatalítica, que contribui para superfícies autolimpantes e para a inibição de microrganismos. O carbonato de cálcio nanométrico atua como carga funcional, melhorando propriedades como resistência e acabamento.`,
+    `In paints and coatings, performance depends on how the particle is distributed in the formulation. At the nanoscale, particles have much more contact area with the resin, which favors dispersion, finish and the action of the active ingredient on the surface. Titanium dioxide is known for protecting against UV radiation and, under light, can have photocatalytic action, which contributes to self-cleaning surfaces and to the inhibition of microorganisms. Nanoscale calcium carbonate acts as a functional filler, improving properties such as resistance and finish.`,
+    `En pinturas y recubrimientos, el desempeño depende de cómo se distribuye la partícula en la formulación. A escala nanométrica, las partículas tienen mucha más área de contacto con la resina, lo que favorece la dispersión, el acabado y la acción del activo en la superficie. El dióxido de titanio es conocido por la protección contra la radiación UV y, bajo la luz, puede tener acción fotocatalítica, que contribuye a superficies autolimpiables y a la inhibición de microorganismos. El carbonato de calcio nanométrico actúa como carga funcional, mejorando propiedades como la resistencia y el acabado.`],
+  [`Dispersão na formulação`, `Dispersion in the formulation`, `Dispersión en la formulación`],
+  [`Nanopartículas estabilizadas são incorporadas à tinta, ao verniz ou ao pó sem perder suas propriedades`, `Stabilized nanoparticles are incorporated into the paint, varnish or powder without losing their properties`, `Las nanopartículas estabilizadas se incorporan a la pintura, al barniz o al polvo sin perder sus propiedades`],
+  [`Ação na superfície`, `Action on the surface`, `Acción en la superficie`],
+  [`Cobre e óxido de zinco inibem bactérias e fungos, e o dióxido de titânio protege contra a radiação UV`, `Copper and zinc oxide inhibit bacteria and fungi, and titanium dioxide protects against UV radiation`, `El cobre y el óxido de zinc inhiben bacterias y hongos, y el dióxido de titanio protege contra la radiación UV`],
+  [`Desempenho por mais tempo`, `Performance for longer`, `Desempeño por más tiempo`],
+  [`Menor degradação do revestimento e propriedades mantidas ao longo do uso`, `Less degradation of the coating and properties maintained throughout use`, `Menor degradación del recubrimiento y propiedades mantenidas a lo largo del uso`],
+
+  // agro: novo destaque
+  [`Nutrição mais eficiente para as plantas`, `More efficient plant nutrition`, `Nutrición más eficiente para las plantas`],
+  [`Nutrientes em escala nanométrica que otimizam a absorção e reduzem perdas`, `Nanoscale nutrients that optimize absorption and reduce losses`, `Nutrientes a escala nanométrica que optimizan la absorción y reducen pérdidas`],
+  [`<b>Nutrição mais eficiente para as plantas.</b>…`, `<b>More efficient plant nutrition.</b> Nanoscale nutrients that optimize absorption and reduce losses.`, `<b>Nutrición más eficiente para las plantas.</b> Nutrientes a escala nanométrica que optimizan la absorción y reducen pérdidas.`],
+
+  // destaque de conteúdo (página Áreas)
+  [`Um dos principais focos da NanoBrasil no Brasil: levar nanopartículas antimicrobianas ao setor avícola.`, `One of NanoBrasil's main focuses in Brazil: bringing antimicrobial nanoparticles to the poultry sector.`, `Uno de los principales focos de NanoBrasil en Brasil: llevar nanopartículas antimicrobianas al sector avícola.`],
+  [`Um dos principais focos da NanoBrasil no Brasil: nanopartículas para tintas e revestimentos de maior desempenho.`, `One of NanoBrasil's main focuses in Brazil: nanoparticles for higher-performance paints and coatings.`, `Uno de los principales focos de NanoBrasil en Brasil: nanopartículas para pinturas y recubrimientos de mayor desempeño.`],
+  [`Manejo sanitário em instalações avícolas`, `Health management in poultry facilities`, `Manejo sanitario en instalaciones avícolas`],
+  [`Nanocobre, do campo ao aviário`, `Nanocopper, from the field to the poultry house`, `Nanocobre, del campo al galpón avícola`],
+  [`Tintas e revestimentos com desempenho por mais tempo`, `Paints and coatings that perform for longer`, `Pinturas y recubrimientos con desempeño por más tiempo`],
+  [`Dióxido de titânio em tintas e revestimentos`, `Titanium dioxide in paints and coatings`, `Dióxido de titanio en pinturas y recubrimientos`],
+  [`Nanopartículas para o setor`, `Nanoparticles for the sector`, `Nanopartículas para el sector`],
+  [`Nanocobre`, `Nanocopper`, `Nanocobre`],
+  [`Ação antimicrobiana sobre as bactérias e os fungos do ambiente de criação`, `Antimicrobial action on the bacteria and fungi of the rearing environment`, `Acción antimicrobiana sobre las bacterias y los hongos del ambiente de crianza`],
+  [`Óxido de zinco nanométrico`, `Nanoscale zinc oxide`, `Óxido de zinc nanométrico`],
+  [`Atua junto ao cobre na inibição de bactérias e fungos`, `Works alongside copper to inhibit bacteria and fungi`, `Actúa junto con el cobre en la inhibición de bacterias y hongos`],
+  [`Cobre e óxido de zinco`, `Copper and zinc oxide`, `Cobre y óxido de zinc`],
+  [`Agentes antimicrobianos que inibem bactérias e fungos na superfície`, `Antimicrobial agents that inhibit bacteria and fungi on the surface`, `Agentes antimicrobianos que inhiben bacterias y hongos en la superficie`],
+  [`Dióxido de titânio`, `Titanium dioxide`, `Dióxido de titanio`],
+  [`Melhora os revestimentos, protege contra a radiação UV e pode substituir a prata, reduzindo custos`, `Improves coatings, protects against UV radiation and can replace silver, reducing costs`, `Mejora los recubrimientos, protege contra la radiación UV y puede sustituir a la plata, reduciendo costos`],
+  [`Carbonato de cálcio`, `Calcium carbonate`, `Carbonato de calcio`],
+  [`Carga funcional que melhora a resistência e o acabamento`, `Functional filler that improves resistance and finish`, `Carga funcional que mejora la resistencia y el acabado`],
+
+  // aviso de cookies
+  [`Aviso de cookies`, `Cookie notice`, `Aviso de cookies`],
+  [`Usamos apenas o armazenamento necessário para o site funcionar, como a sua preferência de idioma. Se você aceitar, poderemos usar cookies de medição para entender como o site é usado. <a href="privacidade.html">Saiba mais</a>`, `We only use the storage needed for the site to work, such as your language preference. If you accept, we may use measurement cookies to understand how the site is used. <a href="privacidade.html">Learn more</a>`, `Solo usamos el almacenamiento necesario para que el sitio funcione, como su preferencia de idioma. Si acepta, podremos usar cookies de medición para entender cómo se usa el sitio. <a href="privacidade.html">Más información</a>`],
+  [`Usamos apenas o armazenamento necessário para o site funcionar, como a sua preferência de idioma. Se você aceitar, poderemos usar cookies de medição para entender como o site é usado. <a href="../privacidade.html">Saiba mais</a>`, `We only use the storage needed for the site to work, such as your language preference. If you accept, we may use measurement cookies to understand how the site is used. <a href="../privacidade.html">Learn more</a>`, `Solo usamos el almacenamiento necesario para que el sitio funcione, como su preferencia de idioma. Si acepta, podremos usar cookies de medición para entender cómo se usa el sitio. <a href="../privacidade.html">Más información</a>`],
+  [`Somente necessários`, `Necessary only`, `Solo necesarias`],
+  [`Aceitar`, `Accept`, `Aceptar`],
+];
