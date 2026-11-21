@@ -766,3 +766,16 @@ ul, ol { padding: 0; list-style: none; }
 .cookie-open .wa-float { bottom: calc(var(--cookie-h, 72px) + 14px); }
 @media (max-width: 560px) { .cookie { padding-block: 14px 16px; } .cookie__actions { width: 100%; } .cookie__actions .btn { flex: 1; } }
 @media (prefers-reduced-motion: reduce) { .cookie { transition: opacity .2s; transform: none; } }
+
+/* 29. SEÇÃO "COMO FUNCIONA" EM FUNDO CLARO --------------------------------- */
+.section--light .front__text { color: var(--l-muted); }
+.section--light .front__text strong { color: var(--l-text); }
+.section--light .front__visual { background: var(--l-bg); box-shadow: inset 0 0 0 1px var(--l-border); }
+.section--light .pipe { border-bottom-color: rgba(0,0,0,.1); }
+.section--light .pipeline--row .pipe { border-right-color: rgba(0,0,0,.1); }
+.section--light .pipe i { color: var(--l-muted); box-shadow: inset 0 0 0 1px rgba(0,0,0,.16); }
+.section--light .pipe.is-on i { color: #fff; box-shadow: 0 0 14px var(--accent-glow); }
+.section--light .pipe.is-done i { color: var(--accent); box-shadow: inset 0 0 0 1px rgba(242,100,48,.4); }
+.section--light .pipe span { color: #8A8A92; }
+.section--light .pt { background: var(--l-surface); box-shadow: inset 0 0 0 1px var(--l-border); }
+.section--light .pt small { color: #8A8A92; }

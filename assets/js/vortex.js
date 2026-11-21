@@ -39,14 +39,21 @@
   /* níveis (coordenadas normalizadas, raio 1) */
   const rnd = (n, f) => Array.from({ length: n }, f);
   const inDisk = () => { const a = Math.random() * TAU, r = Math.sqrt(Math.random()); return [Math.cos(a) * r, Math.sin(a) * r]; };
-  const grains = rnd(420, () => { const [x, y] = inDisk(); return { x: x * 1.4, y: y * 1.4, r: .025 + Math.random() * .07, s: Math.random() }; });
+  // continuidade entre níveis: cada nível nasce de um elemento central do anterior, com o mesmo tamanho na tela.
+  // grão central (raio HG) ≙ aglomerado inteiro; partícula central (raio HP) ≙ rede atômica.
+  const HG = .0666, HP = .09;
+  const grains = [{ x: 0, y: 0, r: HG, s: .8, hero: true }].concat(rnd(2400, () => {
+    // espalhados por uma área grande: no início formam uma textura fina sobre a pintura, não um disco de bolhas
+    let x, y, r; do { [x, y] = inDisk(); x *= 3.4; y *= 3.4; r = .025 + Math.random() * .07; } while (Math.hypot(x, y) < HG + r + .01);
+    return { x, y, r, s: Math.random() };
+  }));
   const cluster = (() => {
-    const out = [], R = .055;
+    const out = [{ x: 0, y: 0, r: HP, o: false, z: .5, hero: true }], R = .055;
     for (let i = 0; out.length < 240 && i < 20000; i++) {
       const [x, y] = inDisk(); const p = { x: x * .95, y: y * .95, r: R * (.8 + Math.random() * .4) };
       if (out.every(q => Math.hypot(q.x - p.x, q.y - p.y) > (q.r + p.r) * .92)) out.push(p);
     }
-    out.forEach(p => { p.o = Math.random() < .12; p.z = Math.random(); });
+    out.forEach(p => { if (!p.hero) { p.o = Math.random() < .12; p.z = Math.random(); } });
     return out.sort((a, b) => a.z - b.z);
   })();
   const atoms = (() => { // rede cúbica de face centrada recortada numa esfera
@@ -118,31 +125,36 @@
     ctx.clearRect(0, 0, W, H);
     const cx = W / 2, cy = H * .38;
 
-    // nível 1: pintura — grãos micrométricos
-    let a = vis(L, 1);
+    // passagens (cada uma acontece dentro do elemento central do nível anterior)
+    const in2 = smooth(1.1, 1.55, L), in3 = smooth(2.2, 2.62, L);
+
+    // nível 1: pintura — grãos micrométricos (surgem como textura, crescem e saem pelas bordas)
+    let a = smooth(.3, .8, L) * (1 - smooth(1.35, 1.85, L));
     if (a > .01) {
       const z = zoomOf(L, 1), base = M * .55;
       for (const g of grains) {
         const x = cx + g.x * base * z, y = cy + g.y * base * z, r = g.r * base * z;
-        if (x + r < 0 || x - r > W || y + r < 0 || y - r > H) continue;
-        ctx.globalAlpha = a * (.35 + g.s * .5);
+        if (x + r < 0 || x - r > W || y + r < 0 || y - r > H || r < .3) continue;
+        ctx.globalAlpha = g.hero ? smooth(.3, .8, L) * .85 * (1 - in2) : a * (.35 + g.s * .5);
+        if (ctx.globalAlpha < .01) continue;
         ctx.drawImage(BD, x - r, y - r, r * 2, r * 2);
       }
     }
-    // nível 2: aglomerado de nanopartículas
-    a = vis(L, 2);
+    // nível 2: aglomerado de nanopartículas (nasce dentro do grão central)
+    a = in2 * (1 - smooth(2.35, 2.85, L));
     if (a > .01) {
       const z = zoomOf(L, 2), base = M * .27;
       for (const q of cluster) {
-        const wob = Math.sin(t * 1.2 + q.z * 9) * .004;
+        const wob = q.hero ? 0 : Math.sin(t * 1.2 + q.z * 9) * .004;
         const x = cx + (q.x + wob) * base * z, y = cy + (q.y - wob) * base * z, r = q.r * base * z;
         if (x + r < 0 || x - r > W || y + r < 0 || y - r > H) continue;
-        ctx.globalAlpha = a;
+        ctx.globalAlpha = q.hero ? in2 * (1 - in3) : a;
+        if (ctx.globalAlpha < .01) continue;
         ctx.drawImage(q.o ? BO : BG, x - r, y - r, r * 2, r * 2);
       }
     }
-    // nível 3: uma nanopartícula — rede atômica girando
-    a = smooth(2.25, 2.75, L);
+    // nível 3: uma nanopartícula — rede atômica girando (nasce da partícula central, no mesmo tamanho)
+    a = in3;
     if (a > .01) {
       const z = Math.min(zoomOf(L, 3), 1.15), R = M * .17 * z;
       const ry = t * .35, rx = .45 + Math.sin(t * .25) * .15;

@@ -153,7 +153,7 @@ export function home(news) {
   <div class="mt-3">${logosMarquee(root)}</div>
 </section>
 
-<section class="section bordered" id="frentes">
+<section class="section section--light" id="frentes">
   <div class="container">
     <div class="section-head">
       <span class="label reveal">Como funciona a NanoBrasil</span>
@@ -189,7 +189,7 @@ export function home(news) {
   </div>
 </section>
 
-<section class="section section--light" style="overflow:hidden">
+<section class="section section--light bordered" style="overflow:hidden">
   <div class="container row-head">
     <div class="section-head">
       <span class="label reveal">Áreas de atuação</span>
